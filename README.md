@@ -1,2 +1,9 @@
 # stocks_powered_pension
 Numerical simulation of a retirement investment fund with 3% yearly inflation and variable yearly gains from the stock market
+
+Retirement can only begin if a large enough initial fund or "nest egg" has been saved up, which can then be invested into the stock market. The fund is large enough to begin retirement if the yearly payouts and losses due to inflation do not decrease the total fund size to zero before death (assumed at the age of 100). This is where the yearly increase of the fund due to the stock market increase comes into play, allowing for the sustenance of the fund with an assumed constant growth percentage that has been varied as 7 and 9% in the report.
+The simulation code takes a guess value of the initial fund size at a chosen retirement start year and finds the optimal initial fund size where the fund grows for the majority of retirement but has a downturn before death, without reaching zero. This version of the optimisation function finds the minimal needed nest egg to retire with a chosen monthly payout at its 2025 value, but if the personal goal is to instead leave behind a significant inheritance without a downturn in the fund size, that can also be programmed.
+
+Possible future improvements:
+-- Add optimisation routine for leaving behind a sizeable inheritance instead of the fund size decreasing before death. Would require larger initial fund size but would be interesting to see how much larger it would have to be.
+-- Improve on the complexity of the yearly stock market increase model. Currently the model assumes a constant increase of the same percentage every year.
